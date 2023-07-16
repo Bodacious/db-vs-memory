@@ -1,0 +1,21 @@
+<h1>
+Showing users by dominant hand
+</h1>
+
+<hr>
+
+<h2>
+  Showing <%= pluralize lh_users.count, 'left handed user' %>
+</h2>
+
+<ul>
+  <%= render(lh_users) %>
+</ul>
+
+<h2>
+  Showing <%= pluralize rh_users.count, 'right handed user' %>
+</h2>
+
+<ul>
+  <%= render(rh_users) %>
+</ul>
